@@ -336,6 +336,40 @@ h1 {
   text-underline-offset: 4px;
 }
 
+.invite-shell {
+  justify-content: space-between;
+}
+
+.invite-page {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  padding: clamp(54px, 12vw, 118px) 0;
+}
+
+.invite-card {
+  width: min(100%, 680px);
+  padding: clamp(28px, 6vw, 52px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.58)),
+    linear-gradient(135deg, rgba(108, 158, 180, 0.14), rgba(211, 154, 54, 0.12));
+  box-shadow: var(--shadow);
+}
+
+.invite-card h1 {
+  max-width: 10ch;
+  font-size: clamp(2.7rem, 8vw, 4.7rem);
+}
+
+.invite-summary {
+  max-width: 560px;
+  margin-bottom: 30px;
+  color: var(--ink-soft);
+  font-size: clamp(1.08rem, 1rem + 0.38vw, 1.28rem);
+}
+
 @media (max-width: 760px) {
   .site-shell {
     width: min(100% - 24px, var(--max-width));
@@ -373,6 +407,17 @@ h1 {
   .site-footer {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .invite-page {
+    place-items: start;
+    padding-top: 48px;
+  }
+
+  .invite-card h1 {
+    max-width: none;
+    font-size: clamp(2.25rem, 11vw, 3rem);
+    line-height: 1;
   }
 }
 
