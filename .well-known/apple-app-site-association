@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "5PT6CBF227.com.rustymeadows.DestinationApp",
+        "paths": ["/invites/*"]
+      }
+    ]
+  }
+}
